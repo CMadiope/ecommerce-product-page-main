@@ -123,6 +123,14 @@ hr {
 
 .current-price {
   display: flex;
+  font-weight: bolder;
+}
+
+.old-price {
+  padding-top: 10px;
+  text-decoration: line-through;
+  color: hsl(220, 14%, 75%);
+  font-weight: lighter;
 }
 
 .percent {
@@ -131,4 +139,53 @@ hr {
   background-color: hsl(25, 100%, 94%);
   border-radius: 5px;
   
+}
+.buttons {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-top: 70px;
+}
+
+.left-button {
+  padding: 10px 30px 10px 30px;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 10px;
+  
+}
+.left-btn-container {
+  padding-top: 10px;
+}
+
+.left-btn-container  span{
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bolder;
+}
+.minus {
+  padding-bottom: 3px;
+}
+
+.right-button {
+  padding-left: 20px;
+}
+
+.right-button button{
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  text-align: center;
+  color: #fff;
+  padding: 15px 60px 15px 60px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+}
+.right-button button:hover {
+  opacity: 0.5;
+}
+.right-button img {
+  padding-right: 10px;
+  /* width: 30px;
+  height: 20px; */
+  padding-top: 10px;
 }
