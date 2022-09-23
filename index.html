@@ -1,124 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  
-  <title>CM | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>CM | E-commerce product page</title>
 
-  <div class="container">
-    <nav>
-      <div class="left-nav">
-        <div class="sneakers">
-          <img src="./images/logo.svg" alt="">
-        </div>
-        
-        <ul class="links">
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="right-nav">
-        <div class="cart">
-          <img src="./images/icon-cart.svg" alt="">
-        </div>
-        <div class="avatar">
-          <img src="./images/image-avatar.png" alt="">
-        </div>
-      </div>
-    </nav>
-    <hr>
-    <main>
-      <div class="cards">
-        <div class="picture-card card">
-          <div class="main-picture">
-            <img src="./images/image-product-1.jpg" alt="sneaker" class="main-pic">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="left-nav">
+          <div class="sneakers">
+            <img src="./images/logo.svg" alt="" />
           </div>
-          <div class="thumbnails">
-            <img src="./images/image-product-1-thumbnail.jpg" alt="">
-            <img src="./images/image-product-2-thumbnail.jpg" alt="">
-            <img src="./images/image-product-3-thumbnail.jpg" alt="">
-            <img src="./images/image-product-4-thumbnail.jpg" alt="">
+
+          <ul class="links">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <div class="cart" id="cart">
+            <img src="./images/icon-cart.svg" alt="" />
+          </div>
+          <div class="avatar">
+            <img src="./images/image-avatar.png" alt="" />
           </div>
         </div>
-        <div class="info-card card">
-          <div class="inner">
-            <h4 class="sc">
-            Sneaker Company
-          </h4>
-          <h1 class="fall">
-            Fall Limited Edition Sneakers
-          </h1>
-          <p>
-            These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-          </p>
-          <div class="prices">
-            <div class="current-price">
-            <h4>$125.00</h4>  
-            <h4 class="percent">50%</h4>
+      </nav>
+      <hr class="line" />
+      <main>
+        <div class="cards">
+          <div class="picture-card card">
+            <div class="main-picture">
+              <img
+                src="./images/image-product-1.jpg"
+                alt="sneaker"
+                class="main-pic"
+              />
             </div>
-            <div class="old-price">
-              <h5>$250.00</h5>
+            <div class="thumbnails">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-4-thumbnail.jpg" alt="" />
             </div>
           </div>
-          <div class="buttons">
-            <div class="left-button">
-              <div class="left-btn-container">
-                <img src="./images/icon-minus.svg" alt="" class="minus">
-                <span class="zero">0</span>
-                <img src="./images/icon-plus.svg" alt="">
+          <div class="info-card card">
+            <div class="inner">
+              <h4 class="sc">Sneaker Company</h4>
+              <h1 class="fall">Fall Limited Edition Sneakers</h1>
+              <p>
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+              <div class="prices">
+                <div class="current-price">
+                  <h4>$125.00</h4>
+                  <h4 class="percent">50%</h4>
+                </div>
+                <div class="old-price">
+                  <h5>$250.00</h5>
+                </div>
+              </div>
+              <div class="buttons">
+                <div class="left-button">
+                  <div class="left-btn-container">
+                    <img src="./images/icon-minus.svg" alt="" class="minus" />
+                    <span class="zero">0</span>
+                    <img src="./images/icon-plus.svg" alt="" class="plus" />
+                  </div>
+                </div>
+                <div class="right-button">
+                  <button>
+                    <img src="./images/icon-cart.svg" alt="cart" />Add to cart
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="right-button">
-              <button>
-                <img src="./images/icon-cart.svg" alt="cart">Add to cart
-              </button>
-            </div>
           </div>
+        </div>
+      </main>
+
+      <!-- pop up / onclick elements -->
+      <div class="cart-pop-up" id="pop">
+        <div class="cart-container">
+          <div class="cart-header">
+            <h3>Cart</h3>
           </div>
-          
+          <hr />
+          <div class="cart-content">
+            <p>Your cart is empty.</p>
+          </div>
         </div>
       </div>
-    </main>
-  </div>
+    </div>
 
-  
-  
-  
-  
-  
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Confidence</a>.
+    </div>
 
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Confidence</a>.
-  </div>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>

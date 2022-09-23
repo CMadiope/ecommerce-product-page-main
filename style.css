@@ -28,6 +28,11 @@ ul li {
   color: hsl(220, 14%, 75%);
 }
 
+ul li:hover {
+  color: black;
+}
+
+
 .left-nav{
   display: flex;
   justify-content: space-between;
@@ -51,6 +56,8 @@ ul li {
   margin-right: 40px;
   cursor: pointer;
   margin-top: 30px;
+  width: 100% ;
+  height: 100%;
 }
 .avatar {
   cursor: pointer;
@@ -64,7 +71,7 @@ ul li {
   opacity: 0.5;
 }
 
-hr {
+.line {
   size: 2px;
   margin: 0 130px 0 130px;
 }
@@ -94,11 +101,16 @@ hr {
 }
 .thumbnails {
   display: flex;
-  
+  justify-content: space-evenly;
+  width: 100%;
 }
 .thumbnails img {
   width: 60px;
   height: 60px;
+}
+.thumbnails img:hover {
+  opacity: 0.5;
+  border: 3px solid hsl(26, 100%, 55%);
 }
 
 .inner {
@@ -163,7 +175,15 @@ hr {
 }
 .minus {
   padding-bottom: 3px;
+  cursor: pointer;
 }
+.plus {
+  cursor: pointer;
+}
+.zero {
+  cursor: pointer;
+}
+
 
 .right-button {
   padding-left: 20px;
@@ -188,4 +208,33 @@ hr {
   /* width: 30px;
   height: 20px; */
   padding-top: 10px;
+}
+
+/* pop ups */
+
+.cart-pop-up {
+  visibility: hidden;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px 5px lightgray;
+  position: relative;
+  left: 1050px;
+  bottom: 800px;
+  z-index: 1;
+}
+.cart-pop-up.show {
+  visibility: visible;
+}
+.cart-header {
+  padding: 20px;
+}
+
+.cart-content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.cart-content p {
+  color: hsl(220, 14%, 75%);
 }
